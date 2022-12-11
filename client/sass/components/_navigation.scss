@@ -1,0 +1,39 @@
+.nav {
+    max-height: 12rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__logo {
+        height: 12rem;
+    }
+
+    &__list {
+        list-style: none;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        color: $color-light-3;
+        letter-spacing: 3px;
+        font-weight: 600;
+        font-size: 1.8rem;
+        
+        &-item {
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            height: 70%;
+            align-items: center;
+            padding: 0 2rem;
+
+            &:hover {
+                color: $color-light-1;
+                background-color: $color-primary;
+            }
+        }
+    }
+
+   
+}
