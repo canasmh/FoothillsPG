@@ -4,8 +4,11 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./components/btn";
 @import "./components/btn-text";
+@import "./components/figure-card";
 @import "./components/navigation";
 
 @import "./layout/about";
 @import "./layout/welcome";
+@import "./layout/community";

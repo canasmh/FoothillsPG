@@ -10,8 +10,7 @@ export default function Navigation(props) {
             <ul className="nav__list">
                 <li className="nav__list-item"><a className="nav__list-link">Buy</a></li>
                 <li className="nav__list-item"><a className="nav__list-link">About</a></li>
-                <li className="nav__list-item"><a className="nav__list-link">Community</a></li>
-                <li className="nav__list-item"><a className="nav__list-link">Listings</a></li>
+                <li className="nav__list-item"><a className="nav__list-link">Communities</a></li>
                 <li className="nav__list-item"><a className="nav__list-link">Team</a></li>
                 <li className="nav__list-item"><a className="nav__list-link">Testimonials</a></li>
                 <li className="nav__list-item"><a className="nav__list-link">Contact</a></li>
