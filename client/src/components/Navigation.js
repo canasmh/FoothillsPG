@@ -5,7 +5,7 @@ export default function Navigation(props) {
     return (
         <nav className="nav">
             <div className="nav__logo-container">
-                <a className="nav__logo-link"><img src="./images/logo.png" className="nav__logo" /></a>
+                <a className="nav__logo-link"><img src="./images/logo.png" alt="foothills property group logo" className="nav__logo" /></a>
             </div>
             <ul className="nav__list">
                 <li className="nav__list-item"><a className="nav__list-link">Buy</a></li>
