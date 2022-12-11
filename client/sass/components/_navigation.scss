@@ -1,9 +1,11 @@
 .nav {
     max-height: 10rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    background-color: rgba($color-black, 0.5);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
 
     &__logo {
         height: 10rem;
@@ -33,7 +35,5 @@
                 background-color: $color-primary;
             }
         }
-    }
-
-   
+    }  
 }
