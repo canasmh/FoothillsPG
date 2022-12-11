@@ -41,15 +41,16 @@
     }
 
     &__search {
-        font-size: 1.4rem;
-        padding: 2rem 5rem;
+        font-size: 1.6rem;
+        padding: 1.6rem 4rem;
         border-radius: 30px;
         color: $color-dark-2;
         text-transform: none;
         letter-spacing: 2px;
         width: 70%;
         box-shadow: none;
-        transition: width 0.5s;
+        transition: all 0.5s;
+        border: 3px solid transparent;
 
         &::placeholder {
             color: $color-dark-1;
@@ -60,6 +61,7 @@
 
         &:focus {
             outline: none;
+            border: 3px solid $color-primary;
         }
 
         &:hover,
