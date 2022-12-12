@@ -4,6 +4,7 @@ import About from "./Home/About";
 import Community from "./Home/Community";
 import Listings from "./Home/Listings";
 import Team from "./Home/Team";
+import Testimonials from "./Home/Testimonials";
 
 export default function Home(props) {
 
@@ -15,6 +16,7 @@ export default function Home(props) {
                 <Community />
                 <Listings />
                 <Team />
+                <Testimonials />
             </main>
         </>
     )
