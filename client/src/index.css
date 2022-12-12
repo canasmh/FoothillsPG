@@ -227,7 +227,7 @@ h2 {
       animation: pulsate 1s infinite;
       animation-direction: alternate;
       animation-timing-function: ease-out;
-      fill: #7cc095; }
+      fill: #59B079; }
       .slider__arrow--right:hover {
         animation-play-state: paused; }
     .slider__arrow--left {
@@ -240,6 +240,24 @@ h2 {
     overflow-x: scroll; }
   .slider__card {
     margin-right: 5rem; }
+  .slider__profile-card {
+    margin-right: 8rem; }
+  .slider__profile-container {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 4px solid #59B079;
+    margin-bottom: 4rem; }
+  .slider__profile-image {
+    height: 30rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+  .slider__profile-name {
+    color: #FFF;
+    font-size: 1.8rem;
+    letter-spacing: 5px; }
   .slider__heading {
     font-size: 2.4rem;
     margin-bottom: 0.5rem; }
@@ -395,3 +413,18 @@ h2 {
 
 .listings {
   padding: 15rem 10rem; }
+
+.team {
+  padding: 15rem 10rem;
+  background-image: linear-gradient(0, #333333 0%, black 25%, black 75%, #333333 100%);
+  color: #FFF; }
+  .team__cta {
+    text-align: center;
+    line-height: 2;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-bottom: 10rem; }
+    .team__cta span {
+      color: #59B079; }
