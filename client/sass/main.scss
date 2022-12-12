@@ -1,3 +1,4 @@
+@import "./abstracts/animations";
 @import "./abstracts/utilities";
 @import "./abstracts/variables";
 
@@ -8,7 +9,9 @@
 @import "./components/btn-text";
 @import "./components/figure-card";
 @import "./components/navigation";
+@import "./components/slider";
 
 @import "./layout/about";
 @import "./layout/welcome";
 @import "./layout/community";
+@import "./layout/listings";
