@@ -9,30 +9,42 @@ export default function Testimonials(props) {
 
             <div className="testimonials__container">
                 <div className="testimonials__container--individual">
-                    <div className="testimonials__container--card">
-                        <img src="./images/profile-pic-1.jpeg" className="testimonials__img" />
-                        <h3 className="testimonials__heading">Juan was fantastic</h3>
-                        <p className="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                    <div className="testimonials__card">
+                        <div className="testimonials__img-container">
+                            <img src="./images/profile-pic-1.jpeg" className="testimonials__img" />
+                        </div>
+                        <div className="testimonials__text-container">
+                            <h3 className="testimonials__heading">Juan was fantastic</h3>
+                            <p className="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                        </div>
                     </div>
-                    <p className="testimonials__link">View on Zillow</p>
+                    <p className="testimonials__link">View on Zillow  &rarr;</p>
                 </div>
 
                 <div className="testimonials__container--individual">
-                    <div className="testimonials__container--card">
-                        <img src="./images/profile-pic-2.jpeg" className="testimonials__img" />
-                        <h3 className="testimonials__heading">Best decision ever</h3>
-                        <p className="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                    <div className="testimonials__card">
+                        <div className="testimonials__img-container">
+                            <img src="./images/profile-pic-2.jpeg" className="testimonials__img" />
+                        </div>
+                        <div className="testimonials__text-container">
+                            <h3 className="testimonials__heading">Best decision ever</h3>
+                            <p className="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                        </div>
                     </div>
-                    <p className="testimonials__link">View on Zillow</p>
+                    <p className="testimonials__link">View on Zillow &rarr;</p>
                 </div>
 
                 <div className="testimonials__container--individual">
-                    <div className="testimonials__container--card">
-                        <img src="./images/profile-pic-3.jpeg" className="testimonials__img" />
-                        <h3 className="testimonials__heading"> 100% recommend</h3>
-                        <p className="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                    <div className="testimonials__card">
+                        <div className="testimonials__img-container">
+                            <img src="./images/profile-pic-3.jpeg" className="testimonials__img" />
+                        </div>
+                        <div className="testimonials__text-container">
+                            <h3 className="testimonials__heading"> 100% recommend</h3>
+                            <p className="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                        </div>
                     </div>
-                    <p className="testimonials__link">View on Zillow</p>
+                    <p className="testimonials__link">View on Zillow &rarr;</p>
                 </div>
             </div>
             <a className="btn">See all reviews</a>
