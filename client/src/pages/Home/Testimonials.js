@@ -35,6 +35,7 @@ export default function Testimonials(props) {
                     <p className="testimonials__link">View on Zillow</p>
                 </div>
             </div>
+            <a className="btn">See all reviews</a>
         </section>
     );
 }
