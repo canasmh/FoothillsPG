@@ -18,6 +18,7 @@ export default function Home(props) {
                 <Listings />
                 <Team />
                 <Testimonials />
+                <Contact />
             </main>
         </>
     )
