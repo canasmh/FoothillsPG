@@ -1,0 +1,11 @@
+.community {
+    background-image: $dark-bg;
+    padding: $section-padding;
+
+    &__container {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+}
