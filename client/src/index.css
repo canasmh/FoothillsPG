@@ -268,7 +268,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  z-index: 10000;
+  z-index: 100;
   text-align: center; }
   .nav__logo {
     max-height: 10rem;
@@ -389,64 +389,6 @@ h2 {
     position: absolute;
     width: 100%;
     bottom: 0; }
-
-.testimonials {
-  letter-spacing: 3px; }
-  .testimonials__container {
-    width: 70%;
-    margin: 0 auto; }
-  .testimonials__container--individual {
-    position: relative; }
-  .testimonials__card {
-    border: 4px solid #59B079;
-    border-radius: 15px;
-    width: 90%;
-    margin: 0 auto 10rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem 2rem;
-    background-color: #EEE;
-    transition: all 0.5s ease-out 0.1s;
-    position: relative;
-    z-index: 10; }
-  .testimonials__img-container {
-    flex: 0 0 10rem;
-    border: 2px solid #59B079;
-    height: 10rem;
-    overflow: hidden;
-    position: relative;
-    border-radius: 50%;
-    margin-right: 3rem; }
-  .testimonials__img {
-    height: 10rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); }
-  .testimonials__heading {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #59B079;
-    font-size: 2.4rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem; }
-  .testimonials__link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s ease-out 0.1s;
-    color: #459161;
-    padding-bottom: 1rem;
-    font-weight: 500;
-    border-bottom: 1px solid #459161;
-    z-index: 1;
-    cursor: pointer; }
-    .testimonials__link:hover {
-      letter-spacing: 5px; }
-  .testimonials__container--individual:hover .testimonials__card {
-    transform: translateX(30%); }
-  .testimonials__container--individual:hover .testimonials__link {
-    left: 15%; }
 
 .about {
   padding: 15rem 10rem; }
@@ -575,6 +517,3 @@ h2 {
     margin-bottom: 10rem; }
     .team__cta span {
       color: #59B079; }
-
-.testimonials {
-  padding: 15rem 10rem; }
