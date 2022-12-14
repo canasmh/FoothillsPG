@@ -1,0 +1,78 @@
+.testimonials {
+    letter-spacing: 3px;
+    
+    &__container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    &__container--individual {
+        position: relative;
+    }
+
+    &__card {
+        border: 4px solid $color-primary;
+        border-radius: 15px;
+        width: 90%;
+        margin: 0 auto 10rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+        background-color: $color-light-1;
+        transition: all 0.5s ease-out 0.1s;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__img-container {
+        flex: 0 0 10rem;
+        border: 2px solid $color-primary;
+        height: 10rem;
+        overflow: hidden;
+        position: relative;
+        border-radius: 50%;
+        margin-right: 3rem;
+    }
+
+    &__img {
+        height: 10rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__heading {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $color-primary;
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    &__link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-out 0.5s;
+        color: $color-primary-dark;
+        padding-bottom: 1rem;
+        font-weight: 500;
+        border-bottom: 1px solid $color-primary-dark;
+        z-index: 1;
+        cursor: pointer;
+
+        &:hover {
+            letter-spacing: 5px;
+        }
+    }
+
+    &__container--individual:hover &__card{
+        transform: translateX(30%);
+    }
+
+    &__container--individual:hover &__link{
+        left: 15%;
+    }
+}
