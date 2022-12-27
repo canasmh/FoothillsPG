@@ -37,12 +37,12 @@
         }
 
         &-1 {
-            background-image: linear-gradient(to right, rgba($color-black, 0.1), rgba($color-black, 0.1)), url("../public/images/falls-park.jpeg");
+            background-image: linear-gradient(to right, rgba($color-black, 0.1), rgba($color-black, 0.1)), url("../images/falls-park.jpeg");
             margin-right: 5rem;
         }
 
         &-2 {
-            background-image: linear-gradient(to right, rgba($color-black, 0.1), rgba($color-black, 0.1)), url("../public/images/falls-park-2.jpeg");
+            background-image: linear-gradient(to right, rgba($color-black, 0.1), rgba($color-black, 0.1)), url("../images/falls-park-2.jpeg");
             margin-left: 5rem;
         }
     }
