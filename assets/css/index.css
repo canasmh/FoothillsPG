@@ -150,11 +150,11 @@ h2 {
   transition: all 0.3s;
   cursor: pointer; }
   .figure-card-1 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/images/home-1.jpeg"); }
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/home-1.jpeg"); }
   .figure-card-2 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/images/home-2.jpeg"); }
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/home-2.jpeg"); }
   .figure-card-3 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/images/home-3.jpeg"); }
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/home-3.jpeg"); }
   .figure-card__text {
     font-size: 2.4rem;
     font-weight: 500;
@@ -195,7 +195,7 @@ h2 {
     margin-bottom: 3rem;
     letter-spacing: 3px; }
   .form__group {
-    width: 50%;
+    width: 49%;
     display: inline-block;
     padding: 1.2rem; }
   .form__input {
@@ -476,10 +476,10 @@ h2 {
       transform: scale(1.07) translateY(-0.3rem);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
     .about__image--container-1 {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../public/images/falls-park.jpeg");
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/falls-park.jpeg");
       margin-right: 5rem; }
     .about__image--container-2 {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../public/images/falls-park-2.jpeg");
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/falls-park-2.jpeg");
       margin-left: 5rem; }
   .about__description {
     flex: 0 1 100%; }
@@ -495,7 +495,7 @@ h2 {
 
 .welcome {
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.8), rgba(0, 0, 0, 0.8)), url("../public/images/search-bg.png");
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.8), rgba(0, 0, 0, 0.8)), url("../images/search-bg.png");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -595,7 +595,12 @@ h2 {
   .copyright__site-design {
     font-size: 1rem;
     letter-spacing: 1px;
-    margin-top: 2rem; }
+    margin-top: 2.5rem;
+    font-weight: 300;
+    color: #333; }
+  .copyright span {
+    color: #59B079;
+    font-weight: 500; }
 
 .listings {
   padding: 15rem 10rem; }
