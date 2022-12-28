@@ -4,10 +4,11 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px; 
-    color: #CCC;
+    color: $color-light-1;
 
     &__img {
         margin-bottom: 6rem;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(859%) hue-rotate(190deg) brightness(120%) contrast(87%);
     }
 
     &__content {
@@ -37,6 +38,24 @@
 
     &__list {
         list-style: none;
+
+        &-link {
+
+            &,
+            &:link,
+            &:visited {
+                color: inherit;
+                text-decoration: none;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            &:hover {
+                color: $color-light-2;
+                letter-spacing: 5px;
+            }
+
+        }
     }
 }
 
