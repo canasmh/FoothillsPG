@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/png" href="./assets/images/fpg-icon.png">
+        <title>Write a Review | Foothills Property Group</title>
+        <script src="https://kit.fontawesome.com/8faf32238c.js" crossorigin="anonymous"></script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav__logo-container">
+                <a href="index.html" class="nav__logo-link"><img src="./assets/images/fpg-logo.png" alt="foothills property group logo" class="nav__logo"/></a>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="buy.html" class="nav__list-link">Buy</a></li>
+                <li class="nav__list-item"><a href="communities.html" class="nav__list-link">Communities</a></li>
+                <li class="nav__list-item nav__dropdown"><a role="button" class="nav__list-link ">Team</a>
+                    <div class="nav__dropdown--menu">
+                        <ul class="nav__dropdown--list">
+                            <li class="nav__dropdown--list-item"><a class="nav__dropdown--list-link" href="agents.html">Our Agents</a></li>
+                            <li class="nav__dropdown--list-item"><a class="nav__dropdown--list-link" href="join-team.html">Join Our Team</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__list-item active"><a href="testimonials.html" class="nav__list-link">Testimonials</a></li>
+                <li class="nav__list-item"><a href="contact.html" class="nav__list-link">Contact</a></li>
+            </ul>
+        </nav>
+<!-- 
+        <section class="banner">
+            <div class="banner__container">
+                <h1 class="banner__heading">
+                    <span class="banner__heading--span-2">What our </span>
+                    <span class="banner__heading--span-1">Clients</span>
+                    <span class="banner__heading--span-2">have to say</span>
+                </h1>
+            </div>
+        </section> -->
+
+        <main>
+            <section id="writeReview">
+                <h2 class="u-margin-bottom-l">Thank you for Reviewing</h2>
+                <div class="write-review__container">
+                    <h3>0 / 5</h3>
+                    <i class="fa-solid fa-star-sharp review-stars" id="one-stars"></i>
+                    <i class="fa-solid fa-star-sharp review-stars" id="two-stars"></i>
+                    <i class="fa-solid fa-star-sharp review-stars" id="three-stars"></i>
+                    <i class="fa-solid fa-star-sharp review-stars" id="four-stars"></i>
+                    <i class="fa-solid fa-star-sharp review-stars" id="five-stars"></i>
+                </div>
+                
+                <a class="btn u-margin-top-xl" role="button">Submit Review</a>
+
+                <p class="error hide" style="text-align: center;">You must give at least one star</p>
+                <p class="google hide"><a href="https://www.google.com/search?q=foothills+property+group+google+page&safe=active&sxsrf=ALiCzsayJoSYfFwocEsO-ErT2FC_Nc6TRA%3A1672431090345&ei=8kWvY9zeFIjMkPIPoomJuAU&ved=0ahUKEwjcn7Sok6L8AhUIJkQIHaJEAlcQ4dUDCBA&uact=5&oq=foothills+property+group+google+page&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAEyBQghEKABOgoIABBHENYEELADOgUIIRCrAjoICCEQFhAeEB1KBAhBGABKBAhGGABQtANYsQZg6gZoAXABeACAAcgBiAHuA5IBBTAuMi4xmAEAoAEByAEIwAEB&sclient=gws-wiz-serp#ip=1&lrd=0x885831d1367a8785:0xcf72d02cfe46b440,3,,," target="_blank" class="btn-text">
+                    Submit on Google
+                </a></p>
+
+                <form class="form hide">
+                    <h3 class="form__header">Submit a Review</h3>
+                    <p class="form__text">Fill out the form below to submit your review</p>
+    
+                    <div class="form__group">
+                        <input type="text" id="fName" name="fName" class="form__input" placeholder="First Name" required />
+                        <label for="fName" class="form__label">First Name</label>
+                    </div>
+    
+                    <div class="form__group">
+                        <input type="text" id="lName" name="lName" class="form__input" placeholder="Last Name" required />
+                        <label for="lName" class="form__label">Last Name</label>
+                    </div>
+    
+                    <div class="form__group">
+                        <input type="email" id="email" name="email" class="form__input" placeholder="Email Address" required />
+                        <label for="email" class="form__label">Email Address</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="text" id="subject" name="subject" class="form__input" placeholder="Subject" required />
+                        <label for="subject" class="form__label">Subject</label>
+                    </div>
+    
+                    <textarea id="message" name="message" rows="8" class="form__message" placeholder="Write your review here..." required></textarea>
+                    <button type="submit" class="form__btn">Submit Review</button>
+                </form>
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <img src="./assets/images/fpg-logo-largest.png" alt="foothills logo footer" class="footer__img" />
+            <div class="footer__content">
+                <nav class="footer__column">
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="buy.html" class="footer__list-link">Buy</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link">About</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link">Communities</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link">Team</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link">Testimonials</a></li>
+                        <li class="footer__list-item"><a class="footer__list-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__column">
+                    <h3>Our Communities</h3>
+                    <p>Anderson</p>
+                    <p>Greenville</p>
+                    <p>Greer</p>
+                    <p>Simpsonville</p>
+                    <p>Spartanburg</p>
+                    <p>Taylors</p>
+                    <p>Travelers Rest</p>
+                    <p>and many more!</p>
+                </div>
+                <div class="footer__column">
+                    <address>
+                        <h4 class="footer__contact--header">Address</h4>
+                        <p><a class="footer__contact--link">330 E Coffee St. Suite 5005<br/>Greenville, SC 29601</a></p>
+                        <h4 class="footer__contact--header">Phone</h4>
+                        <p><a class="footer__contact--link">(864) 527 - 5992</a></p>
+                        <!-- Social media links go in here -->
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>Foothills Property Group &copy; 2023 | All Rights Reserved</p>
+            <p class="copyright__site-design">Designed & Developed by <span>Manuel H. Canas</span></p>
+        </div>
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
