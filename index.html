@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="icon" type="image/png" href="./assets/images/fpg-icon.png">
         <title>Welcome | Foothills Property Group</title>
+        <script src="https://kit.fontawesome.com/8faf32238c.js" crossorigin="anonymous"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/index.css">
@@ -20,7 +21,7 @@
             <ul class="nav__list">
                 <li class="nav__list-item"><a href="buy.html" class="nav__list-link">Buy</a></li>
                 <li class="nav__list-item"><a href="communities.html" class="nav__list-link">Communities</a></li>
-                <li class="nav__list-item nav__dropdown"><a href="team.html" class="nav__list-link ">Team</a>
+                <li class="nav__list-item nav__dropdown"><a role="button" class="nav__list-link ">Team</a>
                     <div class="nav__dropdown--menu">
                         <ul class="nav__dropdown--list">
                             <li class="nav__dropdown--list-item"><a class="nav__dropdown--list-link" href="agents.html">Our Agents</a></li>
@@ -29,7 +30,7 @@
                     </div>
                 </li>
                 <li class="nav__list-item"><a href="testimonials.html" class="nav__list-link">Testimonials</a></li>
-                <li class="nav__list-item"><a href="contact.html" class="nav__list-link">Contact</a></li>
+                <li class="nav__list-item"><a href="contact.html" class="nav__list-link">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -66,7 +67,7 @@
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
                 </div>
             </div>
-            <a class="btn-text">Learn more &rarr;</a>
+            <!-- <a class="btn-text">Learn more &rarr;</a> -->
         </section>
         <section class="community">
             <h2 class="u-margin-bottom-l">Explore your community</h2>
@@ -181,7 +182,6 @@
                                 <h4 class="slider__price">$250,000</h4>
                             </div>          
                         </div>
-                        
                     </div>
                 </div>
                 <svg class="slider__arrow slider__arrow--right">
@@ -230,12 +230,58 @@
             <div class="testimonials__container">
                 <div class="testimonials__container--individual">
                     <div class="testimonials__card">
-                        <div class="testimonials__img-container">
-                            <img src="./assets/images/profile-pic-1.jpeg" class="testimonials__img" />
+                        <div class="testimonials__header">
+                            <div class="testimonials__img-container">
+                                <img src="./assets/images/profile-pic-1.jpeg" class="testimonials__img" />
+                            </div>
+                            <div class="testimonials__text-container">
+                                <h3 class="testimonials__heading">Juan was fantastic</h3>
+                                <div class="testimonials__main-rating--container">
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div> 
+                            </div>
                         </div>
                         <div class="testimonials__text-container">
-                            <h3 class="testimonials__heading">Juan was fantastic</h3>
                             <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                            <hr />
+                            <div class="testimonials__ratings">
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Local knowledge:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Process Expertise:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Responsiveness:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Negotiating Skills:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <p class="testimonials__link">View on Zillow  &rarr;</p>
@@ -243,12 +289,59 @@
 
                 <div class="testimonials__container--individual">
                     <div class="testimonials__card">
-                        <div class="testimonials__img-container">
-                            <img src="./assets/images/profile-pic-2.jpeg" class="testimonials__img" />
+                        <div class="testimonials__header">
+                            <div class="testimonials__img-container">
+                                <img src="./assets/images/profile-pic-2.jpeg" class="testimonials__img" />
+                            </div>
+                            <div class="testimonials__text-container">
+                                <h3 class="testimonials__heading">Best decision ever</h3>
+                                <div class="testimonials__main-rating--container">
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div> 
+                            </div>
                         </div>
                         <div class="testimonials__text-container">
-                            <h3 class="testimonials__heading">Best decision ever</h3>
+                        
                             <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                            <hr />
+                            <div class="testimonials__ratings">
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Local knowledge:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Process Expertise:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Responsiveness:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Negotiating Skills:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <p class="testimonials__link">View on Zillow &rarr;</p>
@@ -256,15 +349,62 @@
 
                 <div class="testimonials__container--individual">
                     <div class="testimonials__card">
-                        <div class="testimonials__img-container">
-                            <img src="./assets/images/profile-pic-3.jpeg" class="testimonials__img" />
+                        <div class="testimonials__header">
+                            <div class="testimonials__img-container">
+                                <img src="./assets/images/profile-pic-3.jpeg" class="testimonials__img" />
+                            </div>
+                            <div class="testimonials__text-container">
+                                <h3 class="testimonials__heading"> 100% recommend</h3>
+                                <div class="testimonials__main-rating--container">
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="testimonials__text-container">
-                            <h3 class="testimonials__heading"> 100% recommend</h3>
                             <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo sed egestas egestas fringilla phasellus faucibus. Cursus turpis massa tincidunt dui.</p>
+                            <hr />
+                            <div class="testimonials__ratings">
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Local knowledge:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Process Expertise:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Responsiveness:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                                <div class="testimonials__rating--container">
+                                    <p class="testimonials__rating--text">Negotiating Skills:</p>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                    <i class="fa-solid fa-star-sharp"></i>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                     <p class="testimonials__link">View on Zillow &rarr;</p>
+                    
                 </div>
             </div>
             <a class="btn">See all reviews</a>
@@ -307,11 +447,11 @@
                 <nav class="footer__column">
                     <ul class="footer__list">
                         <li class="footer__list-item"><a href="buy.html" class="footer__list-link">Buy</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link">About</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link">Communities</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link">Team</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link">Testimonials</a></li>
-                        <li class="footer__list-item"><a class="footer__list-link">Contact</a></li>
+                        <li class="footer__list-item"><a href="communities.html" class="footer__list-link">Communities</a></li>
+                        <li class="footer__list-item"><a href="agents.html" class="footer__list-link">Our Agents</a></li>
+                        <li class="footer__list-item"><a href="join-team.html" class="footer__list-link">Join Our Team</a></li>
+                        <li class="footer__list-item"><a href="testimonials.html" class="footer__list-link">Testimonials</a></li>
+                        <li class="footer__list-item"><a href="contact.html" class="footer__list-link">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="footer__column">
@@ -340,5 +480,8 @@
             <p>Foothills Property Group &copy; 2023 | All Rights Reserved</p>
             <p class="copyright__site-design">Designed & Developed by <span>Manuel H. Canas</span></p>
         </div>
+        <script src="./assets/js/index.js"></script>
+        <script src="./assets/js/listingsSlider.js"></script>
+        <script src="./assets/js/teamSlider.js"></script>
     </body>
 </html>
