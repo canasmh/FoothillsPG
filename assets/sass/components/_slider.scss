@@ -31,7 +31,7 @@
         flex: 1 0 70%;
         display: flex;
         justify-content: flex-start;
-        overflow-x: scroll;
+        overflow: hidden;
     }
 
     &__card {
