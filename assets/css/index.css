@@ -390,12 +390,41 @@ h2 {
     border-radius: 100%;
     overflow: hidden;
     border: 4px solid #59B079;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    position: relative; }
+  .slider__profile-container:hover {
+    border-radius: 50%; }
+  .slider__profile-container:hover .slider__profile-image {
+    filter: blur(1px);
+    transform: translateX(-50%) scale(0.95) translateY(-1rem); }
+  .slider__profile-container:hover .slider__profile--caption {
+    transform: translateY(-100%); }
   .slider__profile-image {
     height: 25rem;
     position: relative;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    transition: all 0.3s ease-out; }
+  .slider__profile--caption {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #EEE;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    transition: all 0.3s ease-out; }
+    .slider__profile--caption-text {
+      margin-bottom: 1rem; }
+  .slider__profile--icons a, .slider__profile--icons a:visited, .slider__profile--icons a:link {
+    color: #EEE;
+    cursor: pointer; }
+  .slider__profile--icons a:not(:last-child) {
+    margin-right: 0.5rem; }
+  .slider__profile--icons a i {
+    transition: all 0.2s; }
+  .slider__profile--icons a:hover i {
+    transform: scale(1.2);
+    color: #59B079; }
   .slider__profile-name {
     color: #FFF;
     font-size: 1.8rem;
@@ -557,10 +586,10 @@ h2 {
     margin-right: 5rem;
     cursor: pointer; }
     .about__image--container:hover {
-      transform: scale(1.1) translateY(-0.5rem);
+      transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
     .about__image--container:active {
-      transform: scale(1.07) translateY(-0.3rem);
+      transform: scale(1.03) translateY(-0.3rem);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
     .about__image--container-1 {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/falls-park.jpeg");
@@ -735,13 +764,31 @@ h2 {
     margin: 0 auto;
     line-height: 2.2; }
   .footer__column {
-    flex-basis: 25rem; }
+    flex-basis: 30rem; }
     .footer__column h3 {
       margin-bottom: 1.2rem; }
     .footer__column h4:not(:last-child) {
       margin-bottom: 0.2rem; }
     .footer__column h4:not(:first-child) {
       margin-top: 0.4rem; }
+    .footer__column address a,
+    .footer__column address a:visited,
+    .footer__column address a:link {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s; }
+    .footer__column address a:hover {
+      color: #CCC; }
+    .footer__column--icons {
+      margin-top: 1rem; }
+      .footer__column--icons a:not(:last-child) {
+        margin-right: 1.5rem; }
+      .footer__column--icons a, .footer__column--icons a:visited, .footer__column--icons a:link {
+        color: inherit;
+        font-size: 2.1rem;
+        transition: color 0.2s; }
+      .footer__column--icons a:hover {
+        color: #CCC; }
   .footer__list {
     list-style: none; }
     .footer__list-link, .footer__list-link:link, .footer__list-link:visited {
@@ -802,10 +849,7 @@ h2 {
   border: 5px solid #59B079;
   border-radius: 8px;
   padding: 3rem 0;
-  text-align: center;
-  transition: all 0.4s; }
-  .agent__container:hover {
-    transform: scale(1.1) translateY(0.3rem); }
+  text-align: center; }
 
 .agent__img--container {
   height: 20rem;
@@ -847,7 +891,20 @@ h2 {
 
 .agent__links {
   text-transform: uppercase;
-  font-size: 1.4rem; }
+  font-size: 2.5rem;
+  margin-top: 2rem; }
+  .agent__links a:not(:last-child) {
+    margin-right: 1.5rem; }
+  .agent__links i {
+    transition: all 0.3s; }
+  .agent__links a,
+  .agent__links a:visited,
+  .agent__links a:link {
+    color: #459161; }
+  .agent__links a:hover {
+    color: #7cc095; }
+    .agent__links a:hover i {
+      transform: scale(1.3); }
 
 .join-team__text {
   width: 80%;
@@ -872,16 +929,29 @@ h2 {
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
     color: #459161; }
-    .contact-us p:last-child {
-      margin-bottom: 5rem; }
   .contact-us span {
     font-weight: 600;
     text-transform: uppercase;
     color: #666; }
-  .contact-us a {
+  .contact-us a, .contact-us a:visited, .contact-us a:link {
     text-decoration: none;
     color: inherit;
     transition: all 0.2s ease-in;
     display: inline-block; }
-    .contact-us a:hover {
-      color: #2c5d3e; }
+  .contact-us a:hover {
+    color: #2c5d3e; }
+  .contact-us__icons {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem; }
+    .contact-us__icons :not(:last-child) {
+      margin-right: 2rem; }
+    .contact-us__icons a, .contact-us__icons a:visited, .contact-us__icons a:link {
+      color: #459161;
+      transition: none; }
+    .contact-us__icons a i {
+      transition: all 0.3s; }
+    .contact-us__icons a:hover {
+      color: #7cc095; }
+      .contact-us__icons a:hover i {
+        transform: scale(1.3); }
