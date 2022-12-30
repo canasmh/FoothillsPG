@@ -25,16 +25,10 @@
         letter-spacing: 2px;
         font-weight: 500;
         font-size: 1.4rem;
-        flex-basis: 50%;
+        flex-basis: 70%;
         
         &-item {
             text-transform: uppercase;
-            flex: 0 1;
-            display: flex;
-            height: 100%;
-            align-items: center;
-            justify-content: space-around;
-            padding: 0 2.2%;
         }
 
         &-link {
@@ -62,16 +56,15 @@
         position: relative;
         
         &--menu {
+            display: none;
             background-image: inherit;
             position: absolute;
-            overflow: visible;
-            opacity: 0;
-            width: 250%;
+            width: 350%;
             top: 150%;
-            left: 0;
+            left: -25%;
             background-color: $color-primary;
             border-radius: 3px;
-            transition: all 0.5s;
+            transition: color 0.5s;
         }
 
         &--list {
@@ -98,11 +91,10 @@
                     color: $color-light-3;
                 }
             }
-        }
-
-        &:hover &--menu {
-            opacity: 1;
-        }
-        
+        }   
     }
+}
+
+.active {
+    color: $color-primary;
 }
