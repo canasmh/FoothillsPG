@@ -1,0 +1,40 @@
+.contact-us {
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+
+    & p {
+        font-size: 2rem;
+        flex-basis: 100%;
+        letter-spacing: 1px;
+
+        margin-bottom: 1.5rem;
+        color: $color-primary-dark;
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+
+    & span {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-dark-2;
+    }
+    
+    & a {
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.2s ease-in;
+        display: inline-block;
+
+        &:hover {
+            color: darken($color-primary-dark, 15%);
+            // letter-spacing: 2px;
+        }
+    }
+    // color: $color-primary;
+}
