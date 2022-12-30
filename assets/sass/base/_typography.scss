@@ -14,3 +14,14 @@ h2 {
     text-transform: uppercase;
     text-align: center;
 }
+
+.error {
+    color: red;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(0.2rem);
+    transition: all 0.5s;
+    display: none;
+}
