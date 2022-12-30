@@ -12,13 +12,8 @@
         border-radius: 8px;
         padding: 3rem 0;
         text-align: center;
-        transition: all 0.4s;
-
-        &:hover {
-            transform: scale(1.1) translateY(0.3rem);
-        }
-
     }
+
     &__img--container {
         height: 20rem;
         width: 20rem;
@@ -29,6 +24,7 @@
         border-radius: 100%;
         margin-bottom: 2rem;
     }
+
     &__img {
         height: 20rem;
         border-radius: 100%;
@@ -67,7 +63,31 @@
 
     &__links {
         text-transform: uppercase;
-        font-size: 1.4rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        & a:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+
+        & i {
+            transition: all 0.3s;
+        }
+
+        & a,
+        & a:visited,
+        & a:link {
+            color: $color-primary-dark;
+        }
+
+        & a:hover {
+            color: $color-primary-light;
+
+            & i {
+                transform: scale(1.3);
+            }
+        }
+
+        
     }
 
     
