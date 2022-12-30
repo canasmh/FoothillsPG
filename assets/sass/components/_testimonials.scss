@@ -15,27 +15,34 @@
         border-radius: 15px;
         width: 90%;
         margin: 0 auto 10rem;
-        display: flex;
-        justify-content: space-between;
-        padding: 3rem 2rem;
+        // display: flex;
+        // justify-content: space-between;
+        padding: 5rem 10rem;
         background-color: $color-light-1;
         transition: all 0.5s ease-out;
         position: relative;
         z-index: 10;
     }
 
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
     &__img-container {
-        flex: 0 0 10rem;
+        width: 15rem;
         border: 2px solid $color-primary;
-        height: 10rem;
+        height: 15rem;
         overflow: hidden;
         position: relative;
         border-radius: 50%;
-        margin-right: 3rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        
     }
 
     &__img {
-        height: 10rem;
+        height: 15rem;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -47,7 +54,31 @@
         color: $color-primary;
         font-size: 2.4rem;
         font-weight: 600;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    &__main-rating--container {
+        margin-bottom: 0.75rem;
+        font-size: 2rem;
+    }
+
+    & hr, &__hr {
+        width: 100%;
+        margin: 3rem auto;
+    }
+
+    &__ratings {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__rating--container {
+        flex: 0 0 50%;
+        margin-bottom: 2rem;
+    }
+
+    &__rating--text {
+        font-size: 1.4rem;
     }
 
     &__link {
@@ -74,5 +105,26 @@
 
     &__container--individual:hover &__link{
         left: 15%;
+    }
+}
+
+.fa-star-sharp {
+    color: darken(gold, 5%);
+}
+
+.review-stars {
+    color: $color-dark-2;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.write-review {
+
+    &__container {
+        text-align:center;
+        & h3 {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
     }
 }
