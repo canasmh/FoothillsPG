@@ -7,6 +7,7 @@
         font-size: 2.4rem;
         letter-spacing: 6px;
         color: $color-light-1;
+        text-decoration: none;
         padding: 2.5rem;
         min-width: 30%;
         border-radius: 100px;
@@ -54,6 +55,7 @@
         margin-top: 15rem;
         transition: all 0.25s ease-out;
         border: 2px solid $color-primary;
+        text-decoration: none;
         cursor: pointer;
     }
 
