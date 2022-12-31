@@ -1,0 +1,29 @@
+{
+  "name": "foothillspg",
+  "version": "1.0.0",
+  "description": "Website for Foothills Property Group Brokerage ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canasmh/FoothillsPG.git"
+  },
+  "keywords": [
+    "foothills",
+    "real",
+    "estate",
+    "brokerage"
+  ],
+  "author": "Manuel H. Canas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/canasmh/FoothillsPG/issues"
+  },
+  "homepage": "https://github.com/canasmh/FoothillsPG#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

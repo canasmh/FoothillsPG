@@ -1,0 +1,27 @@
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: $color-light-1;
+    color: $color-dark-2;
+}
+
+h2 {
+    color: $color-primary;
+    font-size: 4.0rem;
+    font-weight: 400;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(0.2rem);
+    transition: all 0.5s;
+    display: none;
+}
