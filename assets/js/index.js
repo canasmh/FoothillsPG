@@ -2,7 +2,6 @@ const navWithDropdown = document.querySelector('.nav__dropdown');
 const dropdownMenu = document.querySelector('.nav__dropdown--menu');
 
 navWithDropdown.addEventListener('click', () => {
-    console.log(dropdownMenu.style.display);
     if (dropdownMenu.style.display === 'none' || !dropdownMenu.style.display) {
         dropdownMenu.style.display = 'block';
     } else {
@@ -13,7 +12,6 @@ navWithDropdown.addEventListener('click', () => {
 const navBar = document.querySelector('nav');
 const navBarLogo = document.querySelector('.nav__logo');
 const navBarHeight = navBar.offsetHeight;
-console.log(navBarHeight);
 window.onscroll = () => scrollFunction();
 let scrollingUp = false;
 const scrollFunction = (event) => {
@@ -21,15 +19,13 @@ const scrollFunction = (event) => {
     const docScrollTop = document.body.scrollTop;
 
     if (docScrollTop > (navBarHeight * 1.5) || elemScrollTop > (navBarHeight * 1.5) ) {
-        console.log('gt')
-        navBar.style.maxHeight = '8rem';
+        navBar.style.maxHeight = '80px';
         navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
         navBar.style.transition = 'top 0.5s ease';
-        navBarLogo.style.maxHeight = '8rem';
+        navBarLogo.style.maxHeight = '80px';
         navBar.style.top= "0";
         scrollingUp = true;
     } else {
-        console.log('lt');
 
         if (scrollingUp) {
             navBar.style.transition = 'top 0.2s ease';
@@ -38,14 +34,38 @@ const scrollFunction = (event) => {
             navBar.style.transition == 'none';
         }
         
-        console.log(Math.max(elemScrollTop, docScrollTop))
         navBar.style.top = `-${Math.max(elemScrollTop, docScrollTop)}px`
-        navBar.style.maxHeight = '10rem';
-        navBarLogo.style.maxHeight = '10rem';
+        navBar.style.maxHeight = '100px';
+        navBarLogo.style.maxHeight = '100px';
         navBar.style.backgroundColor = `rgba(0, 0, 0, ${0.8 * (1 - (elemScrollTop / navBarHeight))})`
         
     } 
-    console.log('scrollingUp', scrollingUp);
 }
+
+
+const navBtn = document.querySelector('.nav__button');
+
+let navHidden = true;
+
+const toggleNav = () => {
+    const navList = document.querySelector('.nav__list')
+    const navItems = document.querySelectorAll('.nav__list-item')
+    if (navHidden) {
+        navList.style.display = 'flex';
+        for (let i=0; i < navItems.length; i++) {
+            navItems[i].style.display = 'inherit';  
+        }
+
+        navHidden = false;
+    } else {
+        navList.style.display = 'none';
+        for (let i=0; i < navItems.length; i++) {
+            navItems[i].style.display = 'none';  
+        }
+
+        navHidden = true;
+    }
+}
+navBtn.addEventListener('click', toggleNav)
 
 
