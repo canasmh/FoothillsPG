@@ -6,6 +6,10 @@
     padding: 5rem 10rem; 
     background-color: $color-light-1;
 
+    @include respond(tab-land) {
+        width: 90%;
+    }
+
     &__header {
         text-align: center;
         text-transform: uppercase;

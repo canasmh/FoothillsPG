@@ -4,6 +4,10 @@
     &__container {
         width: 70%;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
     }
 
     &__container--individual {
@@ -22,6 +26,13 @@
         transition: all 0.5s ease-out;
         position: relative;
         z-index: 10;
+
+        @include respond(tab-land) {
+            margin: 5rem auto;
+            padding: 3rem 8rem;
+            width: 100%;
+            z-index: auto;
+        }
     }
 
     &__header {
@@ -38,7 +49,6 @@
         border-radius: 50%;
         margin-bottom: 2rem;
         margin-right: 2rem;
-        
     }
 
     &__img {
@@ -83,6 +93,7 @@
 
     &__link {
         position: absolute;
+        text-decoration: none;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -97,14 +108,35 @@
         &:hover {
             letter-spacing: 5px;
         }
+
+        @include respond(tab-land) {
+            position: static;
+            display: block;
+            text-align: center;
+            z-index: auto;
+            border: none;
+            transform: none;
+
+            &:hover {
+                letter-spacing: inherit;
+            }
+        }
     }
 
     &__container--individual:hover &__card{
         transform: translateX(30%);
+        @include respond(tab-land) {
+            transform: none;
+        }
+
     }
 
     &__container--individual:hover &__link{
         left: 15%;
+
+        @include respond(tab-land) {
+            left: auto;
+        }
     }
 }
 

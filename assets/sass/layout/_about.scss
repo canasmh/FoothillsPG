@@ -8,6 +8,10 @@
         align-items: center;
         margin: 0 auto;
 
+        @include respond(tab-land) {
+            width: 100%;
+        }
+
         &--2 {
             flex-direction: row-reverse;
         }

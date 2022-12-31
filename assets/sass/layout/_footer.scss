@@ -5,6 +5,9 @@
     text-transform: uppercase;
     letter-spacing: 2px; 
     color: $color-light-1;
+    @include respond(tab-land) {
+        line-height: 3;
+    }
 
     &__img {
         margin-bottom: 6rem;
@@ -54,6 +57,10 @@
             margin-top: 1rem;
             & a:not(:last-child) {
                 margin-right: 1.5rem;
+
+                @include respond(tab-land) {
+                    margin-right: 2.4rem;
+                }
             }
             & a {
                 &,
@@ -62,6 +69,10 @@
                     color: inherit;
                     font-size: 2.1rem;
                     transition: color 0.2s;
+
+                    @include respond(tab-land) {
+                        font-size: 2.5rem;
+                    }
                 }
 
                 &:hover {

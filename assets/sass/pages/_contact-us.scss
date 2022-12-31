@@ -6,6 +6,10 @@
     width: 60%;
     margin: 0 auto;
 
+    @include respond(tab-land) {
+        width: 80%;
+    }
+
     & p {
         font-size: 2rem;
         flex-basis: 100%;
@@ -42,8 +46,16 @@
         font-size: 2.5rem;
         margin-top: 2.5rem;
         margin-bottom: 4rem;
+
+        @include respond(tab-land) {
+            font-size: 3rem;
+        }
         :not(:last-child) {
             margin-right: 2rem;
+
+            @include respond(tab-land) {
+                margin-right: 5rem;
+            }
         }
 
         & a {

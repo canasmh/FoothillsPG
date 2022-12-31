@@ -13,6 +13,10 @@ h2 {
     letter-spacing: 7px;
     text-transform: uppercase;
     text-align: center;
+
+    @include respond(tab-land) {
+        letter-spacing: 5px;
+    }
 }
 
 .error {
