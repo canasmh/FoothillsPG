@@ -118,6 +118,10 @@
     cursor: pointer;
 }
 
+.shift-down {
+    transform: translate(-100%);
+}
+
 .write-review {
 
     &__container {
