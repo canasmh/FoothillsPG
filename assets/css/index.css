@@ -1,40 +1,19 @@
-@keyframes pulsate {
-  from {
-    transform: scale(1); }
-  to {
-    filter: drop-shadow(0 0.8rem 1.5rem rgba(0, 0, 0, 0.3));
-    transform: scale(1.2); } }
+/*
+0 - 600 px;     Phone
+600-900 px;     Tablet portrait
+900-1200 px;    Tablet landscape
+1200-1800px;    desktop (normal style)
+1800px +;       large desktop
 
-.u-margin-bottom-xs {
-  margin-bottom: 2rem !important; }
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
 
-.u-margin-bottom-s {
-  margin-bottom: 4rem !important; }
 
-.u-margin-bottom-m {
-  margin-bottom: 6rem !important; }
-
-.u-margin-bottom-l {
-  margin-bottom: 8rem !important; }
-
-.u-margin-bottom-xl {
-  margin-bottom: 10rem !important; }
-
-.u-margin-top-xs {
-  margin-top: 2rem !important; }
-
-.u-margin-top-s {
-  margin-top: 4rem !important; }
-
-.u-margin-top-m {
-  margin-top: 6rem !important; }
-
-.u-margin-top-l {
-  margin-top: 8rem !important; }
-
-.u-margin-top-xl {
-  margin-top: 10rem !important; }
-
+to find em value, divde pixels by 16px
+*/
 *,
 *::after,
 *::before {
@@ -74,6 +53,43 @@ h2 {
   transform: translateY(0.2rem);
   transition: all 0.5s;
   display: none; }
+
+@keyframes pulsate {
+  from {
+    transform: scale(1); }
+  to {
+    filter: drop-shadow(0 0.8rem 1.5rem rgba(0, 0, 0, 0.3));
+    transform: scale(1.2); } }
+
+.u-margin-bottom-xs {
+  margin-bottom: 2rem !important; }
+
+.u-margin-bottom-s {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-m {
+  margin-bottom: 6rem !important; }
+
+.u-margin-bottom-l {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-xl {
+  margin-bottom: 10rem !important; }
+
+.u-margin-top-xs {
+  margin-top: 2rem !important; }
+
+.u-margin-top-s {
+  margin-top: 4rem !important; }
+
+.u-margin-top-m {
+  margin-top: 6rem !important; }
+
+.u-margin-top-l {
+  margin-top: 8rem !important; }
+
+.u-margin-top-xl {
+  margin-top: 10rem !important; }
 
 .btn {
   text-transform: uppercase;
@@ -557,6 +573,9 @@ h2 {
   color: #666;
   font-size: 5rem;
   cursor: pointer; }
+
+.shift-down {
+  transform: translate(-100%); }
 
 .write-review__container {
   text-align: center; }
