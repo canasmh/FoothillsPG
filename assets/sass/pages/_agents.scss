@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+        justify-content: center;
+    }
 }
 
 .agent {
