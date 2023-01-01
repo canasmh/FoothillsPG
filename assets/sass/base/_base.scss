@@ -32,4 +32,8 @@ body {
 
 section {
     padding: $section-padding;
+
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
 }
