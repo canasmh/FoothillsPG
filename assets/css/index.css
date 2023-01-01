@@ -44,6 +44,9 @@ section {
   @media (max-width: 56.25em) {
     section {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    section {
+      padding: 8rem 2rem; } }
 
 body {
   font-size: 1.6rem;
@@ -62,6 +65,10 @@ h2 {
   @media (max-width: 75em) {
     h2 {
       letter-spacing: 5px; } }
+  @media (max-width: 37.5em) {
+    h2 {
+      letter-spacing: 3px;
+      font-size: 3.2rem; } }
 
 .error {
   color: red; }
@@ -90,6 +97,9 @@ h2 {
 
 .u-margin-bottom-l {
   margin-bottom: 8rem !important; }
+  @media (max-width: 75em) {
+    .u-margin-bottom-l {
+      margin-bottom: 6rem !important; } }
 
 .u-margin-bottom-xl {
   margin-bottom: 10rem !important; }
@@ -128,6 +138,12 @@ h2 {
     margin-top: 15rem;
     transition: all 0.3s ease-out;
     cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .btn, .btn:link, .btn:visited {
+        padding: 2.5rem 3.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+        margin-top: 10rem; } }
   .btn:hover {
     transform: translate(-50%, calc(-50% - 1rem));
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
@@ -144,7 +160,6 @@ h2 {
     letter-spacing: 6px;
     color: #59B079;
     padding: 2.5rem;
-    min-width: 30%;
     border-radius: 100px;
     background-color: #FFF;
     display: inline-block;
@@ -157,6 +172,12 @@ h2 {
     border: 2px solid #59B079;
     text-decoration: none;
     cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .btn-outline, .btn-outline:link, .btn-outline:visited {
+        padding: 2.5rem 3.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+        margin-top: 10rem; } }
   .btn-outline:hover {
     transform: translate(-50%, calc(-50% - 1rem));
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
@@ -184,6 +205,9 @@ h2 {
     transform: translate(-50%, -50%);
     margin-top: 1rem;
     transition: all 0.3s ease-out; }
+    @media (max-width: 37.5em) {
+      .btn-text, .btn-text:link, .btn-text:visited {
+        letter-spacing: 3px; } }
   .btn-text:hover {
     background-color: #59B079;
     color: #EEE;
@@ -221,6 +245,9 @@ h2 {
     .figure-card {
       flex: 12.5rem;
       width: 80%; } }
+  @media (max-width: 37.5em) {
+    .figure-card {
+      width: 100%; } }
   .figure-card__text {
     font-size: 2.4rem;
     font-weight: 500;
@@ -254,6 +281,12 @@ h2 {
     .form {
       width: 100%;
       padding: 5rem; } }
+  @media (max-width: 37.5em) {
+    .form {
+      width: 100%;
+      padding: 5rem 2rem;
+      border: 3px solid #459161;
+      border-radius: 8px; } }
   .form__header {
     text-align: center;
     text-transform: uppercase;
@@ -262,11 +295,18 @@ h2 {
     margin-bottom: 2.5rem;
     color: #333;
     letter-spacing: 5px; }
+    @media (max-width: 37.5em) {
+      .form__header {
+        letter-spacing: 2px;
+        font-size: 2.3rem; } }
   .form__text {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
     letter-spacing: 3px; }
+    @media (max-width: 37.5em) {
+      .form__text {
+        letter-spacing: 1px; } }
   .form__group {
     width: 49%;
     display: inline-block;
@@ -349,6 +389,9 @@ h2 {
   @media (max-width: 56.25em) {
     .nav {
       padding: 0 5rem; } }
+  @media (max-width: 37.5em) {
+    .nav {
+      padding: 0 2rem; } }
   .nav__logo {
     max-height: 100px;
     margin-right: 1.6rem; }
@@ -601,6 +644,9 @@ h2 {
 
 .testimonials {
   letter-spacing: 3px; }
+  @media (max-width: 37.5em) {
+    .testimonials {
+      letter-spacing: 1px; } }
   .testimonials__container {
     width: 70%;
     margin: 0 auto; }
@@ -630,12 +676,17 @@ h2 {
         z-index: auto; } }
     @media (max-width: 75em) {
       .testimonials__card {
-        padding: 3rem 3rem; } }
+        padding: 3rem; } }
+    @media (max-width: 37.5em) {
+      .testimonials__card {
+        margin: 3rem auto;
+        padding: 2rem;
+        border: 2px solid #59B079; } }
   .testimonials__header {
     display: flex;
     align-items: center; }
   .testimonials__img-container {
-    width: 15rem;
+    flex: 0 0 15rem;
     border: 2px solid #59B079;
     height: 15rem;
     overflow: hidden;
@@ -645,8 +696,12 @@ h2 {
     margin-right: 2rem; }
     @media (max-width: 56.25em) {
       .testimonials__img-container {
-        width: 12.5rem;
+        flex: 0 0 12.5rem;
         height: 12.5rem; } }
+    @media (max-width: 37.5em) {
+      .testimonials__img-container {
+        flex: 0 0 10rem;
+        height: 10rem; } }
   .testimonials__img {
     height: 15rem;
     position: absolute;
@@ -655,6 +710,9 @@ h2 {
     @media (max-width: 56.25em) {
       .testimonials__img {
         height: 12.5rem; } }
+    @media (max-width: 37.5em) {
+      .testimonials__img {
+        height: 10rem; } }
   .testimonials__heading {
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -662,6 +720,10 @@ h2 {
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 0.75rem; }
+    @media (max-width: 37.5em) {
+      .testimonials__heading {
+        letter-spacing: 3px;
+        font-size: 2.2rem; } }
   .testimonials__main-rating--container {
     margin-bottom: 0.75rem;
     font-size: 2rem; }
@@ -729,11 +791,18 @@ h2 {
     font-size: 5rem;
     margin-bottom: 2rem; }
 
+@media (max-width: 56.25em) {
+  #writeReview {
+    padding-top: 20rem; } }
+
 .about {
   padding: 15rem 10rem; }
   @media (max-width: 56.25em) {
     .about {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .about {
+      padding: 8rem 2rem; } }
   .about__container {
     display: flex;
     width: 80%;
@@ -751,7 +820,17 @@ h2 {
         border: 5px solid #59B079;
         border-radius: 10px;
         width: 50rem;
-        overflow: hidden; } }
+        overflow: hidden;
+        transition: all 0.5s; }
+        .about__container:hover {
+          transform: scale(1.05) translateY(-0.5rem);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
+        .about__container:active {
+          transform: scale(1.03) translateY(-0.3rem);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); } }
+    @media (max-width: 37.5em) {
+      .about__container {
+        width: 95%; } }
   .about__image--container {
     min-height: 25rem;
     min-width: 25rem;
@@ -783,7 +862,17 @@ h2 {
         border-radius: 0;
         border: none;
         margin: 0;
-        margin-bottom: 5rem; } }
+        margin-bottom: 5rem;
+        transition: none; }
+        .about__image--container:hover {
+          transform: none;
+          box-shadow: none; }
+        .about__image--container:active {
+          transform: none;
+          box-shadow: none; } }
+    @media (max-width: 37.5em) {
+      .about__image--container {
+        width: 100%; } }
   .about__description {
     flex: 0 1 100%; }
     @media (max-width: 56.25em) {
@@ -824,6 +913,10 @@ h2 {
       .welcome__container, .banner__container {
         flex-basis: 100%;
         height: 30vh; } }
+    @media (max-width: 37.5em) {
+      .welcome__container, .banner__container {
+        height: auto;
+        margin-top: 10rem; } }
   .welcome__heading, .banner__heading {
     font-size: 4.8rem;
     letter-spacing: 10px;
@@ -837,6 +930,11 @@ h2 {
       color: #59B079; }
     .welcome__heading--span-2, .banner__heading--span-2 {
       color: #DDD; }
+    @media (max-width: 37.5em) {
+      .welcome__heading, .banner__heading {
+        letter-spacing: 3px;
+        font-size: 4rem;
+        margin-bottom: 2rem; } }
   .welcome__description, .banner__description {
     font-size: 2.8rem;
     letter-spacing: 7px;
@@ -847,6 +945,11 @@ h2 {
       color: #DDD; }
     .welcome__description--span-2, .banner__description--span-2 {
       color: #59B079; }
+    @media (max-width: 37.5em) {
+      .welcome__description, .banner__description {
+        margin-bottom: 4rem;
+        font-size: 2rem;
+        letter-spacing: 2px; } }
   .welcome__search, .banner__search {
     font-size: 1.6rem;
     padding: 1.6rem 4rem;
@@ -884,6 +987,9 @@ h2 {
   @media (max-width: 56.25em) {
     .community {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .community {
+      padding: 8rem 2rem; } }
   .community__container {
     display: flex;
     flex-flow: wrap;
@@ -899,6 +1005,9 @@ h2 {
   @media (max-width: 56.25em) {
     .contact {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .contact {
+      padding: 8rem 2rem; } }
 
 .footer {
   background-image: linear-gradient(to bottom, #7cc095, #459161);
@@ -913,12 +1022,18 @@ h2 {
   @media (max-width: 56.25em) {
     .footer {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .footer {
+      padding: 8rem 2rem; } }
   .footer__img {
     margin-bottom: 6rem;
     filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(859%) hue-rotate(190deg) brightness(120%) contrast(87%); }
     @media (max-width: 56.25em) {
       .footer__img {
         width: 40rem; } }
+    @media (max-width: 56.25em) {
+      .footer__img {
+        width: 80%; } }
   .footer__content {
     display: flex;
     justify-content: space-evenly;
@@ -986,9 +1101,16 @@ h2 {
   padding: 3rem 10rem;
   text-align: center;
   font-size: 1.4rem; }
+  @media (max-width: 37.5em) {
+    .copyright {
+      padding: 3rem 1rem;
+      font-size: 1.2rem; } }
   .copyright p {
     text-transform: uppercase;
     letter-spacing: 5px; }
+    @media (max-width: 37.5em) {
+      .copyright p {
+        letter-spacing: 2px; } }
   .copyright__site-design {
     font-size: 1rem;
     letter-spacing: 1px;
@@ -998,6 +1120,9 @@ h2 {
     @media (max-width: 56.25em) {
       .copyright__site-design {
         font-size: 1.2rem; } }
+    @media (max-width: 37.5em) {
+      .copyright__site-design {
+        font-size: 1rem; } }
   .copyright span {
     color: #59B079;
     font-weight: 500; }
@@ -1007,6 +1132,9 @@ h2 {
   @media (max-width: 56.25em) {
     .listings {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .listings {
+      padding: 8rem 2rem; } }
 
 .team {
   padding: 15rem 10rem;
@@ -1015,6 +1143,9 @@ h2 {
   @media (max-width: 56.25em) {
     .team {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .team {
+      padding: 8rem 2rem; } }
   .team__cta {
     text-align: center;
     line-height: 2;
@@ -1031,6 +1162,9 @@ h2 {
   @media (max-width: 56.25em) {
     .testimonials {
       padding: 12.5rem 5rem; } }
+  @media (max-width: 37.5em) {
+    .testimonials {
+      padding: 8rem 2rem; } }
 
 .agents__container {
   display: flex;
