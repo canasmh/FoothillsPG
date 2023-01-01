@@ -2,10 +2,19 @@
     background-image: $dark-bg;
     padding: $section-padding;
 
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
     &__container {
         display: flex;
         flex-flow: wrap;
         justify-content: center;
+
+        @include respond(tab-port) {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
     }
 
 }
