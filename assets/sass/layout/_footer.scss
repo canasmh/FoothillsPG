@@ -9,9 +9,17 @@
         line-height: 3;
     }
 
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
     &__img {
         margin-bottom: 6rem;
         filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(859%) hue-rotate(190deg) brightness(120%) contrast(87%);
+
+        @include respond(tab-port) {
+            width: 40rem;
+        }
     }
 
     &__content {
@@ -21,10 +29,25 @@
         text-align: left;
         margin: 0 auto;
         line-height: 2.2;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__column {
         flex-basis: 30rem;
+
+        @include respond(tab-port) {
+            flex-basis: auto;
+            line-height: 3.2;
+
+            &:not(:last-child) {
+                margin-bottom: 5rem;
+            }
+        }
+
         & h3 {
             margin-bottom: 1.2rem;
         }
@@ -48,6 +71,10 @@
 
             & a:hover {
                 color: $color-light-3;
+            }
+
+            @include respond(tab-port) {
+                line-height: 3.2;
             }
             
         }
@@ -123,6 +150,10 @@
         margin-top: 2.5rem;
         font-weight: 300;
         color: $color-dark-3;
+
+        @include respond(tab-port) {
+            font-size: 1.2rem;
+        }
     }
 
     & span {
