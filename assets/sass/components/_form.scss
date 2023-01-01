@@ -15,6 +15,13 @@
         padding: 5rem;
     }
 
+    @include respond(phone) {
+        width: 100%;
+        padding: 5rem 2rem;
+        border: 3px solid $color-primary-dark;
+        border-radius: 8px;
+    }
+
     &__header {
         text-align: center;
         text-transform: uppercase;
@@ -23,6 +30,11 @@
         margin-bottom: 2.5rem;
         color: $color-dark-3;
         letter-spacing: 5px;
+
+        @include respond(phone) {
+            letter-spacing: 2px;
+            font-size: 2.3rem;
+        }
     }
 
     &__text {
@@ -30,6 +42,10 @@
         text-transform: uppercase;
         margin-bottom: 3rem;
         letter-spacing: 3px;
+
+        @include respond(phone) {
+            letter-spacing: 1px;
+        }
         
     }
 
