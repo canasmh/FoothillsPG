@@ -1,4 +1,8 @@
 .contact {
     background-image: $dark-bg;
     padding: $section-padding;
+
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port
+    }
 }
