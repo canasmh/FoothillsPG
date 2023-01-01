@@ -6,6 +6,10 @@
         padding: $section-padding-tab-port;
     }
 
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
+
     &__container {
         display: flex;
         flex-flow: wrap;
