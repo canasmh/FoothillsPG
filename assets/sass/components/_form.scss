@@ -10,6 +10,11 @@
         width: 90%;
     }
 
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 5rem;
+    }
+
     &__header {
         text-align: center;
         text-transform: uppercase;
@@ -32,6 +37,10 @@
         width: 49%;
         display: inline-block;
         padding: 1.2rem;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__input {
