@@ -13,6 +13,8 @@ const navBar = document.querySelector('nav');
 const navBarLogo = document.querySelector('.nav__logo');
 const navBarHeight = navBar.offsetHeight;
 window.onscroll = () => scrollFunction();
+
+
 let scrollingUp = false;
 const scrollFunction = (event) => {
     const elemScrollTop = document.documentElement.scrollTop;
@@ -44,12 +46,13 @@ const scrollFunction = (event) => {
 
 
 const navBtn = document.querySelector('.nav__button');
+const navList = document.querySelector('.nav__list')
+const navItems = document.querySelectorAll('.nav__list-item')
 
 let navHidden = true;
 
 const toggleNav = () => {
-    const navList = document.querySelector('.nav__list')
-    const navItems = document.querySelectorAll('.nav__list-item')
+    
     if (navHidden) {
         navList.style.display = 'flex';
         for (let i=0; i < navItems.length; i++) {
@@ -69,3 +72,19 @@ const toggleNav = () => {
 navBtn.addEventListener('click', toggleNav)
 
 
+
+function getWindowWidth() {
+
+    const width = window.innerWidth;
+    
+    if (width > 900) {
+        navList.style.display = 'flex';
+        for (let i=0; i < navItems.length; i++) {
+            navItems[i].style.display = 'inherit';  
+        }
+
+        navHidden = false;
+    }
+}
+
+window.onresize = getWindowWidth;
