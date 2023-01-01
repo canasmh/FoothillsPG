@@ -1,19 +1,30 @@
 .about {
     padding: $section-padding;
 
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
     &__container {
         display: flex;
         width: 80%;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
+        &--2 {
+            flex-direction: row-reverse;
+        }
 
         @include respond(tab-land) {
             width: 100%;
         }
 
-        &--2 {
-            flex-direction: row-reverse;
+        @include respond(tab-port) {
+            flex-direction: column;
+            border: 5px solid $color-primary;
+            border-radius: 10px;
+            width: 50rem;
+            overflow: hidden;
         }
 
     }
@@ -49,10 +60,24 @@
             background-image: linear-gradient(to right, rgba($color-black, 0.1), rgba($color-black, 0.1)), url("../images/falls-park-2.jpeg");
             margin-left: 5rem;
         }
+
+        @include respond(tab-port) {
+            width: 50rem;
+            height: auto;
+            background-position: center;
+            border-radius: 0;
+            border: none;
+            margin: 0;
+            margin-bottom: 5rem;
+        }
     }
 
     &__description {
         flex: 0 1 100%;
+
+        @include respond(tab-port) {
+            padding: 0 3rem 3rem;
+        }
     }
 
     &__sub-heading {
@@ -62,6 +87,10 @@
 
         & span {
             color: $color-primary;
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
         }
     }
 
