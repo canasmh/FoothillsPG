@@ -17,6 +17,11 @@ h2 {
     @include respond(tab-land) {
         letter-spacing: 5px;
     }
+
+    @include respond(phone) {
+        letter-spacing: 3px;
+        font-size: 3.2rem;
+    }
 }
 
 .error {
