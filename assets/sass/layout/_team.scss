@@ -3,6 +3,10 @@
     background-image: $dark-bg;
     color: $color-white;
 
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
     &__cta {
         text-align: center;
         line-height: 2;
