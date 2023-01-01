@@ -1,3 +1,11 @@
 .listings {
     padding: $section-padding;
+
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
 }

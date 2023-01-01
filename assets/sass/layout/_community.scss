@@ -2,10 +2,23 @@
     background-image: $dark-bg;
     padding: $section-padding;
 
+    @include respond(tab-port) {
+        padding: $section-padding-tab-port;
+    }
+
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
+
     &__container {
         display: flex;
         flex-flow: wrap;
         justify-content: center;
+
+        @include respond(tab-port) {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
     }
 
 }

@@ -2,16 +2,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+        justify-content: center;
+    }
 }
 
 .agent {
     &__container {
         flex-basis: 35rem;
         margin-bottom: 10rem;
+        margin-right: 2rem;
         border: 5px solid $color-primary;
         border-radius: 8px;
         padding: 3rem 0;
         text-align: center;
+
+        @include respond(tab-land) {
+            flex-basis: 38rem;
+        }
     }
 
     &__img--container {
@@ -65,8 +74,17 @@
         text-transform: uppercase;
         font-size: 2.5rem;
         margin-top: 2rem;
+
+        @include respond(tab-land) {
+            font-size: 3rem;
+        }
+
         & a:not(:last-child) {
             margin-right: 1.5rem;
+
+            @include respond(tab-land) {
+                width: 1.8rem;
+            }
         }
 
         & i {

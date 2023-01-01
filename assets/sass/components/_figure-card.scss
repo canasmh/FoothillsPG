@@ -38,6 +38,15 @@
             url("../images/home-3.jpeg");
     }
 
+    @include respond(tab-port) {
+        flex: 12.5rem;
+        width: 80%;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+    }
+
     &__text {
         font-size: 2.4rem;
         font-weight: 500;

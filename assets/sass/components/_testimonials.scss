@@ -1,9 +1,21 @@
 .testimonials {
     letter-spacing: 3px;
+
+    @include respond(phone) {
+        letter-spacing: 1px;
+    }
     
     &__container {
         width: 70%;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__container--individual {
@@ -22,6 +34,23 @@
         transition: all 0.5s ease-out;
         position: relative;
         z-index: 10;
+
+        @include respond(tab-land) {
+            margin: 5rem auto;
+            padding: 3rem 8rem;
+            width: 100%;
+            z-index: auto;
+        }
+
+        @include respond(tab-land) {
+            padding: 3rem;
+        }
+
+        @include respond(phone) {
+            margin: 3rem auto;
+            padding: 2rem;
+            border: 2px solid $color-primary;
+        }
     }
 
     &__header {
@@ -30,7 +59,7 @@
     }
 
     &__img-container {
-        width: 15rem;
+        flex: 0 0 15rem;
         border: 2px solid $color-primary;
         height: 15rem;
         overflow: hidden;
@@ -38,7 +67,16 @@
         border-radius: 50%;
         margin-bottom: 2rem;
         margin-right: 2rem;
-        
+
+        @include respond(tab-port) {
+            flex: 0 0 12.5rem;
+            height: 12.5rem;
+        }
+
+        @include respond(phone) {
+            flex: 0 0 10rem;
+            height: 10rem;
+        }
     }
 
     &__img {
@@ -46,6 +84,14 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+
+        @include respond(tab-port) {
+            height: 12.5rem;
+        }
+
+        @include respond(phone) {
+            height: 10rem;
+        }
     }
 
     &__heading {
@@ -55,6 +101,11 @@
         font-size: 2.4rem;
         font-weight: 600;
         margin-bottom: 0.75rem;
+
+        @include respond(phone) {
+            letter-spacing: 3px;
+            font-size: 2.2rem;
+        }
     }
 
     &__main-rating--container {
@@ -83,6 +134,7 @@
 
     &__link {
         position: absolute;
+        text-decoration: none;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -97,14 +149,35 @@
         &:hover {
             letter-spacing: 5px;
         }
+
+        @include respond(tab-land) {
+            position: static;
+            display: block;
+            text-align: center;
+            z-index: auto;
+            border: none;
+            transform: none;
+
+            &:hover {
+                letter-spacing: inherit;
+            }
+        }
     }
 
     &__container--individual:hover &__card{
         transform: translateX(30%);
+        @include respond(tab-land) {
+            transform: none;
+        }
+
     }
 
     &__container--individual:hover &__link{
         left: 15%;
+
+        @include respond(tab-land) {
+            left: auto;
+        }
     }
 }
 
@@ -130,5 +203,13 @@
             font-size: 5rem;
             margin-bottom: 2rem;
         }
+
+       
+    }
+}
+
+@include respond(tab-port) {
+    #writeReview {
+        padding-top: 20rem;
     }
 }
