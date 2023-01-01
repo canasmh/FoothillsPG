@@ -68,6 +68,22 @@
         & p {
             margin-bottom: 0.8rem;
         }
+
+        & a {
+            &,
+            &:visited,
+            &:link {
+                color: $color-primary-dark;
+                text-decoration: none;
+                transition: all 0.2s;
+            }
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        
     }
 
     &__links {
