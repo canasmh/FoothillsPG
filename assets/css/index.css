@@ -1224,6 +1224,14 @@ h2 {
 .agent__contact p {
   margin-bottom: 0.8rem; }
 
+.agent__contact a, .agent__contact a:visited, .agent__contact a:link {
+  color: #459161;
+  text-decoration: none;
+  transition: all 0.2s; }
+
+.agent__contact a:hover {
+  color: #59B079; }
+
 .agent__links {
   text-transform: uppercase;
   font-size: 2.5rem;
