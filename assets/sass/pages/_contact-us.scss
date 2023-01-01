@@ -10,6 +10,10 @@
         width: 80%;
     }
 
+    @include respond(tab-port) {
+        width: 100%;
+    }
+
     & p {
         font-size: 2rem;
         flex-basis: 100%;
