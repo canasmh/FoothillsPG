@@ -5,6 +5,10 @@
         padding: $section-padding-tab-port;
     }
 
+    @include respond(phone) {
+        padding: $section-padding-phone;
+    }
+
     &__container {
         display: flex;
         width: 80%;
@@ -25,6 +29,21 @@
             border-radius: 10px;
             width: 50rem;
             overflow: hidden;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.05) translateY(-0.5rem);
+                box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+            }
+    
+            &:active {
+                transform: scale(1.03) translateY(-0.3rem);
+                box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+            }
+        }
+
+        @include respond(phone) {
+            width: 95%;
         }
 
     }
@@ -69,6 +88,21 @@
             border: none;
             margin: 0;
             margin-bottom: 5rem;
+            transition: none;
+
+            &:hover {
+                transform: none;
+                box-shadow: none;
+            }
+    
+            &:active {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+
+        @include respond(phone) {
+            width: 100%;
         }
     }
 
