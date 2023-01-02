@@ -1,6 +1,7 @@
 const left = document.querySelector('.team .slider__arrow--left');
 const right = document.querySelector('.team .slider__arrow--right');
-
+console.log('left', left);
+console.log('right', right);
 const sliderProfile = document.querySelector('.slider__profile-card');
 const allProfiles = document.querySelectorAll('.slider__profile-card');
 const nProfiles = allProfiles.length;
@@ -24,11 +25,11 @@ const profileSlideRight = () => {
     }
 
     if (profileCounter < nProfiles - 1) {
-        right.style.fill = '#59B079';
+        right.style.color = '#59B079';
     }
 
     if (profileCounter === 0) {
-        left.style.fill = '#999';
+        left.style.color = '#999';
     }
     
     console.log(`Final counter: ${profileCounter}`)
@@ -40,7 +41,7 @@ const profileSlideLeft = () => {
         profileCounter++;
 
         if (profileCounter === nProfiles - 1) {
-            right.style.fill = '#999'
+            right.style.color = '#999'
         }
         sliderActived = true;
         right.style.animation = 'none';
@@ -51,7 +52,7 @@ const profileSlideLeft = () => {
     } 
 
     if (profileCounter > 0) {
-        left.style.fill = '#59B079';
+        left.style.color = '#59B079';
     }
     
 
