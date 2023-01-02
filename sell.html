@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="icon" type="image/png" href="./assets/images/fpg-icon.png">
-        <title>Join | Foothills Property Group</title>
+        <title>Contact | Foothills Property Group</title>
         <script src="https://kit.fontawesome.com/8faf32238c.js" crossorigin="anonymous"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,9 +23,9 @@
             </div>
             <ul class="nav__list">
                 <li class="nav__list-item"><a href="buy.html" class="nav__list-link">Buy</a></li>
-                <li class="nav__list-item"><a href="sell.html" class="nav__list-link">Sell</a></li>
+                <li class="nav__list-item active"><a href="sell.html" class="nav__list-link">Sell</a></li>
                 <li class="nav__list-item"><a href="communities.html" class="nav__list-link">Communities</a></li>
-                <li class="nav__list-item nav__dropdown active"><a role="button" class="nav__list-link ">Team</a>
+                <li class="nav__list-item nav__dropdown"><a role="button" class="nav__list-link ">Team</a>
                     <div class="nav__dropdown--menu">
                         <ul class="nav__dropdown--list">
                             <li class="nav__dropdown--list-item"><a class="nav__dropdown--list-link" href="agents.html">Our Agents</a></li>
@@ -41,23 +41,32 @@
         <section class="banner">
             <div class="banner__container">
                 <h1 class="banner__heading">
-                    <span class="banner__heading--span-1">We give</span>
-                    <span class="banner__heading--span-2"> our agents</span>
+                    <span class="banner__heading--span-1">Selling</span>
+                    <span class="banner__heading--span-2">your property?</span>
                 </h1>
                 <p class="banner__description">
-                    <span class="banner__description--span-1">A chance to grow </span>
-                    <span class="banner__description--span-2">their business</span>
+                    <span class="banner__description--span-1">We can help </span>
+                    <span class="banner__description--span-2">you</span>
                 </p>
             </div>
         </section>
 
         <main>
-            <section class="join-team">
-                <h2 class="u-margin-bottom-s">We help our agent's Business grow</h2>
-                <p class="join-team__text">Our brokerage is dedicated to helping agents grow their business, providing them with the tools and information needed to achieve financial freedom.</p>
-                <p class="join-team__text u-margin-bottom-l">We look for motivated individuals who seek such a freedom. <br /> Fill out the form below to schedule a meeting</p>
+            <section>
+                <h2 class="u-margin-bottom-l">We can sell your home</h2>
+
+                <address class="contact-us">
+                    <p><span>Address:</span> <a target="_blank" href="https://www.google.com/maps/place/330+E+Coffee+St,+Greenville,+SC+29601/@34.8504052,-82.397806,17z/data=!3m1!4b1!4m5!3m4!1s0x885831d3dece9207:0xeb72cf97066d9ca6!8m2!3d34.8504052!4d-82.3956173">330 E Coffee St. Suite 5005, Greenville, SC 29601</a></p>
+                    <p><span>Phone:</span> <a target="_blank" href="tel:+18645275992">(864) 527 - 5992</a></p>
+
+                    <div class="contact-us__icons">
+                        <a href="https://www.facebook.com/foothillspropertygroupsc" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/foothillspropertygroup/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/foothills-property-group/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                    </div>
+                </address>
                 <form class="form">
-                    <h3 class="form__header">Join Our Team</h3>
+                    <h3 class="form__header">Sell your home</h3>
                     <p class="form__text">Fill out the form below and one of our agents will reach out to you shortly</p>
     
                     <div class="form__group">
@@ -79,8 +88,86 @@
                         <input type="email" id="email" name="email" class="form__input" placeholder="Email Address" required />
                         <label for="email" class="form__label">Email Address</label>
                     </div>
+
+                    <div class="form__group--large">
+                        <input type="text" id="address1" name="address1" class="form__input" placeholder="Address 1 (i.e., 330 Coffee St)" required />
+                        <label for="address1" class="form__label">Address 1 (i.e., 330 Coffee St)</label>
+                    </div>
+
+                    <div class="form__group--large">
+                        <input type="text" id="address2" name="address1" class="form__input" placeholder="Address 2 (i.e., Suite 5005)"/>
+                        <label for="address1" class="form__label">Address 2 (i.e., Suite 5005)</label>
+                    </div>
+
+                    <div class="form__group form__group--small">
+                        <input type="text" id="city" name="city" class="form__input" placeholder="City" required/>
+                        <label for="city" class="form__label">City</label>
+                    </div>
+
+                    <div class="form__group form__group--x-small">
+                        <select class="form__input" id="state" name="state" required>
+                            <option disabled selected></option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">Ma</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VE</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+
+                        </select>
+                        <label for="state" class="form__label">State</label>
+                    </div>
+
+                    <div class="form__group form__group--small">
+                        <input type="text" id="zipCode" name="zipCode" class="form__input" placeholder="Zip Code" required/>
+                        <label for="zipCode" class="form__label">Zip Code</label>
+                    </div>
     
-                    <textarea id="message" name="message" rows="8" class="form__message" placeholder="Hi, I'm looking to join your team..."></textarea>
+                    <textarea id="message" name="message" rows="8" class="form__message" placeholder="Hi, I'm looking to sell my home..."></textarea>
                     <button type="submit" class="form__btn">Send Message</button>
                 </form>
             </section>
