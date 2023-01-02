@@ -25,7 +25,6 @@ function handleReview(event) {
 
     switch (id) {
         case ('one-stars'): {
-            console.log('hmmm');
             return selectReview(0)
         }
         case ('two-stars'): {
@@ -60,10 +59,8 @@ const submitReviewBtn = document.querySelector('#writeReview a')
 
 
 const submitReview = () => {
-    console.log("I got clicked!")
     const nStars = parseInt(reviewStarsHeader.textContent[0]);
     const errMsg = document.querySelector('#writeReview p.hide')
-    console.log(nStars);
 
     if (!nStars) {
         console.log('mhmmm')
@@ -78,6 +75,7 @@ const submitReview = () => {
         errMsg.style.display = 'none';
         for (let i=0; i < reviewStars.length; i++) {
             reviewStars[i].removeEventListener('mouseenter', handleReview);
+            reviewStars[i].removeEventListener('click', handleReview);
         }
 
 
@@ -91,12 +89,7 @@ const submitReview = () => {
                 document.querySelector('.google').style.opacity = 1;
                 document.querySelector('.google').style.transition = "all 0.5s 0.2s";
                 document.querySelector('.google').style.transform = 'translateY(10rem)';
-                
-                
-
             }, 200)
-            
-            
         }
     }
 }
