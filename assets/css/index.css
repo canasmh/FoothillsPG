@@ -499,38 +499,49 @@ h2 {
 
 .slider {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #333; }
+  color: #333;
+  position: relative; }
   .slider__arrow {
-    flex: 0 0 15%;
-    cursor: pointer; }
-    @media (max-width: 75em) {
+    display: inline-block;
+    font-size: 8rem;
+    position: absolute; }
+    @media (max-width: 37.5em) {
       .slider__arrow {
-        flex: 0 0 10%; } }
+        font-size: 5rem; } }
+    .slider__arrow--left {
+      left: -5rem;
+      z-index: 50;
+      color: #999; }
+      @media (max-width: 37.5em) {
+        .slider__arrow--left {
+          left: -1rem; } }
     .slider__arrow--right {
+      right: -5rem;
+      z-index: 50;
+      color: #59B079;
       animation: pulsate 1s infinite;
       animation-direction: alternate;
-      animation-timing-function: ease-out;
-      fill: #59B079; }
+      animation-timing-function: ease-out; }
       .slider__arrow--right:hover {
         animation-play-state: paused; }
-    .slider__arrow--left {
-      fill: #999; }
-      @media (max-width: 75em) {
-        .slider__arrow--left {
-          margin-right: 2rem; } }
+      @media (max-width: 37.5em) {
+        .slider__arrow--right {
+          right: -1rem; } }
   .slider__container {
     text-align: center;
-    flex: 1 0 70%;
+    flex: 1 0 90%;
     display: flex;
     justify-content: flex-start;
-    overflow: hidden; }
-    @media (max-width: 75em) {
+    overflow: hidden;
+    padding: 0 5rem; }
+    @media (max-width: 37.5em) {
       .slider__container {
-        flex: 0 0 80%; } }
+        flex: 0 0 80%;
+        padding: 0 2.5rem; } }
   .slider__card {
     margin-right: 5rem; }
   .slider__profile-card {
@@ -539,12 +550,12 @@ h2 {
     height: 25rem;
     width: 25rem;
     border-radius: 100%;
-    overflow: hidden;
     border: 4px solid #59B079;
     margin-bottom: 4rem;
-    position: relative; }
-  .slider__profile-container:hover {
-    border-radius: 50%; }
+    position: relative;
+    overflow: hidden;
+    mask-image: -webkit-radial-gradient(white, black);
+    -webkit-mask-image: -webkit-radial-gradient(white, black); }
   .slider__profile-container:hover .slider__profile-image {
     filter: blur(1px);
     transform: translateX(-50%) scale(0.95) translateY(-1rem); }
