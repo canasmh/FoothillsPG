@@ -1216,7 +1216,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 0.4rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .agent__name {
       font-size: 2.1rem;
       margin-bottom: 0.8rem; } }
@@ -1227,14 +1227,14 @@ h2 {
   font-weight: 400;
   margin-bottom: 0.8rem;
   letter-spacing: 3px; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .agent__title {
       font-size: 1.8rem;
       margin-bottom: 1.5rem; } }
 
 .agent__contact p {
   margin-bottom: 0.8rem; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .agent__contact p {
       margin-bottom: 1.6rem; }
       .agent__contact p:last-child {
@@ -1255,11 +1255,17 @@ h2 {
   @media (max-width: 75em) {
     .agent__links {
       font-size: 3rem; } }
+  @media (max-width: 56.25em) {
+    .agent__links {
+      margin-top: 3rem; } }
   .agent__links a:not(:last-child) {
     margin-right: 1.5rem; }
     @media (max-width: 75em) {
       .agent__links a:not(:last-child) {
-        width: 1.8rem; } }
+        margin-right: 1.8rem; } }
+    @media (max-width: 56.25em) {
+      .agent__links a:not(:last-child) {
+        margin-right: 2.5rem; } }
   .agent__links i {
     transition: all 0.3s; }
   .agent__links a,
