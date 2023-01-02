@@ -52,7 +52,18 @@
     &__group {
         width: 49%;
         display: inline-block;
-        padding: 1.2rem;
+
+        &--x-small {
+            width: 19%;
+        }
+
+        &--small {
+            width: 39%
+        }
+
+        &--large {
+            width: 100%;
+        }
 
         @include respond(tab-port) {
             width: 100%;
@@ -86,6 +97,7 @@
         margin-left: 2.5rem;
         letter-spacing: 2px;
         transition: all 0.3s;
+        margin-bottom: 2rem;
     }
 
     &__input:placeholder-shown + &__label {
@@ -95,12 +107,13 @@
     }
 
     &__message {
-        width: 95%;
+        width: 100%;
         padding: 1.2rem 2.5rem;
+        box-sizing: border-box;
         font-family: inherit;
         letter-spacing: 3px;
         font-size: 1.8rem;
-        margin-left: 1.2rem;
+        // margin-left: 1.2rem;
         border-radius: 3px;
         border: 3px solid transparent; 
 
