@@ -522,6 +522,7 @@ h2 {
     .slider__arrow--right {
       right: -5rem;
       z-index: 50;
+      cursor: pointer;
       color: #59B079;
       animation: pulsate 1s infinite;
       animation-direction: alternate;

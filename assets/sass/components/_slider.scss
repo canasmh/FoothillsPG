@@ -29,6 +29,7 @@
         &--right {
             right: -5rem;
             z-index: 50;
+            cursor: pointer;
             color: $color-primary;
             animation: pulsate 1s infinite;
             animation-direction: alternate;
