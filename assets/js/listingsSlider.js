@@ -25,10 +25,12 @@ const slideRight = () => {
 
     if (counter < nCards - 1) {
         rightBtn.style.color = '#59B079';
+        rightBtn.style.cursor = 'pointer';
     }
 
     if (counter === 0) {
         leftBtn.style.color = '#999';
+        leftBtn.style.cursor = 'default';
     }
     
     console.log(`Final counter: ${counter}`)
@@ -40,7 +42,8 @@ const slideLeft = () => {
         counter++;
 
         if (counter === nCards - 1) {
-            rightBtn.style.color = '#999'
+            rightBtn.style.color = '#999';
+            rightBtn.style.cursor = 'default';
         }
         sliderActived = true;
         rightBtn.style.animation = 'none';
@@ -52,6 +55,7 @@ const slideLeft = () => {
 
     if (counter > 0) {
         leftBtn.style.color = '#59B079';
+        leftBtn.style.cursor = 'pointer';
     }
     
 
