@@ -50,6 +50,7 @@ function handleReview(event) {
 window.onload = () => {
     for (let i=0; i < reviewStars.length; i++) {
         reviewStars[i].addEventListener('mouseenter', handleReview);
+        reviewStars[i].addEventListener('click', handleReview);
     }
 
 }

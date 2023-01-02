@@ -1185,6 +1185,9 @@ h2 {
   @media (max-width: 75em) {
     .agent__container {
       flex-basis: 38rem; } }
+  @media (max-width: 37.5em) {
+    .agent__container {
+      flex-basis: 90%; } }
 
 .agent__img--container {
   height: 20rem;
@@ -1213,6 +1216,10 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 0.4rem; }
+  @media (max-width: 37.5em) {
+    .agent__name {
+      font-size: 2.1rem;
+      margin-bottom: 0.8rem; } }
 
 .agent__title {
   text-transform: uppercase;
@@ -1220,9 +1227,18 @@ h2 {
   font-weight: 400;
   margin-bottom: 0.8rem;
   letter-spacing: 3px; }
+  @media (max-width: 37.5em) {
+    .agent__title {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem; } }
 
 .agent__contact p {
   margin-bottom: 0.8rem; }
+  @media (max-width: 37.5em) {
+    .agent__contact p {
+      margin-bottom: 1.6rem; }
+      .agent__contact p:last-child {
+        margin-bottom: 2rem; } }
 
 .agent__contact a, .agent__contact a:visited, .agent__contact a:link {
   color: #459161;
