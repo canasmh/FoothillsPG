@@ -366,6 +366,8 @@ h2 {
     letter-spacing: 3px;
     border: none;
     transition: all 0.3s ease-out;
+    text-transform: uppercase;
+    font-weight: 300;
     cursor: pointer; }
     .form__btn:hover {
       transform: translateY(-1rem);
