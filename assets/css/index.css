@@ -1292,10 +1292,9 @@ h2 {
   .agent__links a:visited,
   .agent__links a:link {
     color: #459161; }
-  .agent__links a:hover {
-    color: #7cc095; }
-    .agent__links a:hover i {
-      transform: scale(1.3); }
+  .agent__links a:hover i {
+    color: #7cc095;
+    transform: scale(1.1); }
 
 .join-team__text {
   width: 80%;
@@ -1360,4 +1359,4 @@ h2 {
     .contact-us__icons a:hover {
       color: #7cc095; }
       .contact-us__icons a:hover i {
-        transform: scale(1.3); }
+        transform: scale(1.1); }
