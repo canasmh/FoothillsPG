@@ -55,7 +55,7 @@
 
         @include respond(phone) {
             flex: 0 0 80%;
-            padding: 0 2.5rem;
+            padding: 0;
         }
     }
 
