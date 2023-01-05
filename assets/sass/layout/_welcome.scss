@@ -93,6 +93,11 @@
             width: 100%;
         }
 
+        @include respond(phone) {
+            font-size: 1.4rem;
+            padding: 1.6rem 2rem;
+        }
+
         &::placeholder {
             color: $color-dark-1;
             text-transform: uppercase;
@@ -101,6 +106,10 @@
 
             @include respond(tab-land) {
                 letter-spacing: 3px;
+            }
+
+            @include respond(phone) {
+                letter-spacing: 1px;
             }
         }
 
