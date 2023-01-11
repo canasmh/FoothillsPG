@@ -65,6 +65,16 @@
 
     &__profile-card {
         margin-right: 8rem;
+
+        & a {
+            &,
+            &:visited,
+            &:link {
+                text-decoration: none;
+                color: inherit;
+                cursor: pointer;
+            }
+        }
     }
 
     &__profile-container {
@@ -79,29 +89,27 @@
         -webkit-mask-image: -webkit-radial-gradient(white, black);
     }
 
+    &__profile-image {
+        // width: 25rem;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.02);
+        transition: all 0.3s ease-out;
+    }
+
     &__profile-container:hover &__profile-image {
-        filter: blur(1px);
-        transform: translateX(-50%) scale(0.95) translateY(-1rem);
+        filter: blur(2px);
+        transform: translate(-50%, -50%) scale(1);
         @include respond(tab-land) {
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
             filter: none;
         }
-    }
-
-    &__profile-container:hover &__profile--caption {
-        transform: translateY(-100%);
-
-        @include respond(tab-land) {
-            transform: none; 
-        }
-    }
-
-    &__profile-image {
-        height: 25rem;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        transition: all 0.3s ease-out;
     }
 
     &__profile--caption {
@@ -110,16 +118,29 @@
         position: absolute;
         top: 100%;
         width: 100%;
+        height: 50%;
         padding: 1.5rem 3rem;
         transition: all 0.3s ease-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @include respond(tab-land) {
             top: auto;
             bottom: 0; 
+            padding: 1.5rem;
         }
 
         &-text {
             margin-bottom: 1rem;
+        }
+    }
+
+    &__profile-container:hover &__profile--caption {
+        transform: translateY(-100%);
+
+        @include respond(tab-land) {
+            transform: none; 
         }
     }
 
@@ -167,9 +188,9 @@
     }
 
     &__subheading {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         color: $color-dark-2;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     &__image-container {
@@ -184,11 +205,16 @@
 
         &:hover{
             transform: translateY(-1rem);
-        }    
+        }
+
+        @include respond(phone) {
+            width: 28rem;
+        }
     }
 
     &__image {
-        height: 20rem;
+        min-width: 100%;
+        max-height: 50%;
         border-bottom: 5px solid $color-primary;
         position: relative;
         left: 50%;
@@ -223,5 +249,18 @@
         position: absolute;
         width: 100%;
         bottom: 0;
+    }
+
+    &__status {
+        position: absolute;
+        top: 20rem;
+        left: 0;
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        width: 100%;
+        background-color: rgba($color-black, 0.6);
+        color: $color-light-1;
+        padding: 1rem;
+        transform: translateY(calc(-100% - 5px));
     }
 }
