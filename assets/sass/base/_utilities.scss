@@ -8,6 +8,9 @@
 
 .u-margin-bottom-m {
     margin-bottom: 6rem!important;
+    @include respond(tab-land) {
+        margin-bottom: 4rem!important;
+    }
 }
 
 .u-margin-bottom-l {

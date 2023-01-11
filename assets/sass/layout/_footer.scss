@@ -180,7 +180,21 @@
     }
 
     & span {
-        color: $color-primary;
+        color: $color-primary-dark;
         font-weight: 500;
+
+        & a {
+            &,
+            &:visited,
+            &:link {
+                text-decoration: none;
+                color: inherit;
+                transition: color 0.3s ease;
+            }
+
+            &:hover {
+                color: $color-primary-light;
+            }
+        }
     }
 }

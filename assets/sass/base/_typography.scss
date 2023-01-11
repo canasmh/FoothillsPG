@@ -11,15 +11,18 @@ h2 {
     font-size: 4.0rem;
     font-weight: 400;
     letter-spacing: 7px;
+    text-indent: 7px;
     text-transform: uppercase;
     text-align: center;
 
     @include respond(tab-land) {
         letter-spacing: 5px;
+        text-indent: 5px;
     }
 
     @include respond(phone) {
         letter-spacing: 3px;
+        text-indent: 3px;
         font-size: 3.2rem;
     }
 }
