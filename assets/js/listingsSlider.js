@@ -7,7 +7,14 @@ const nCards = allCards.length;
 const cardWidth = sliderCard.offsetWidth;
 const cardStyle = getComputedStyle(sliderCard)
 const cardMargin = parseInt(cardStyle.marginRight);
+const sliderContainer = document.querySelector('.listings .slider__container');
+const containerWidth = sliderContainer.offsetWidth;
 
+
+if ((cardWidth + cardMargin) * nCards < containerWidth) {
+    left.style.display = "none";
+    right.style.display = "none";
+}
 
 let counter = 0;
 let sliderActived = false;
@@ -38,20 +45,31 @@ const slideRight = () => {
 
 const slideLeft = () => {
     console.log(`Start counter: ${counter}`)
-    if (counter < nCards - 1) {
-        counter++;
+    let cardsRemaining = nCards - counter;
+    let allCardsShowing = (cardWidth + cardMargin) * cardsRemaining < containerWidth;
 
-        if (counter === nCards - 1) {
-            rightBtn.style.color = '#999';
-            rightBtn.style.cursor = 'default';
-        }
-        sliderActived = true;
-        rightBtn.style.animation = 'none';
-        for (let i=0; i < nCards; i++) {
-            allCards[i].style.transition = "transform 0.4s ease-in-out";
-            allCards[i].style.transform = `translateX(-${(cardWidth + cardMargin) * counter}px)`
-        }
-    } 
+    if (allCardsShowing) {
+        rightBtn.style.color = '#999';
+        rightBtn.style.cursor = 'default';
+    } else {
+        if (counter < nCards - 1) {
+            counter++;
+
+            cardsRemaining = nCards - counter;
+            allCardsShowing = (cardWidth + cardMargin) * cardsRemaining < containerWidth;
+
+            if (counter === nCards - 1 || allCardsShowing) {
+                rightBtn.style.color = '#999';
+                rightBtn.style.cursor = 'default';
+            }
+            sliderActived = true;
+            rightBtn.style.animation = 'none';
+            for (let i=0; i < nCards; i++) {
+                allCards[i].style.transition = "transform 0.4s ease-in-out";
+                allCards[i].style.transform = `translateX(-${(cardWidth + cardMargin) * counter}px)`
+            }
+        } 
+    }
 
     if (counter > 0) {
         leftBtn.style.color = '#59B079';
